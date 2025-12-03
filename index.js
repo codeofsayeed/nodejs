@@ -10,7 +10,7 @@ fs.writeFile("read.txt", "welcome to nodejs file system", (err) => {
 });
 */}
 
-//APPEND FILE:
+//APPEND FILE(Means adding new content at the end of the file):
 {/*const fs=require("fs")
 fs.appendFile("read.txt"," \n this is appended text",(err)=>{
     if(err) throw err;
@@ -37,6 +37,13 @@ fs.rename("read.txt","readwrite.txt",(err)=>{
 fs.unlink("readwrite.txt",(err)=>{
     if(err) throw err;
     console.log("file deleted successfully");
+})*/}
+
+//UPDATE FILE(Means changing the existing content of the file.Not just adding new content at the end, but we can change anywhere in the file or whole file.)
+{/*const fs=require("fs")
+fs.writeFile("read.txt","file updated successfully",(err)=>{
+    if(err) throw err;
+    console.log("file updated successfully");
 })*/}
 
 
